@@ -1,0 +1,27 @@
+"""
+"https://www.geeksforgeeks.org/problems/remove-character3815/1?page=6&difficulty=Basic&sortBy=submissions"
+Given two strings str1 and str2, remove those characters from the first string(str1) which are present in the second string(str2). Both the strings are different and contain only lowercase characters.
+NOTE: Size of the first string is always greater than the size of the second string( |str1| > |str2|).
+ 
+
+Example 1:
+
+Input: str1 = "computer", str2= "cat"
+Output: "ompuer"
+Explanation: After removing characters(c, a, t) from string1 we get "ompuer".
+Example 2:
+
+Input: str1 = "occurrence", str2 = "car"
+Output: "ouene"
+Explanation: After removing characters (c, a, r) from string1 we get "ouene".
+Constraints:
+1 <= |Str1| , |Str2| <= 50
+
+"""
+#User function Template for python3
+
+class Solution:
+    def removeChars (ob, str1, str2):
+        for i in range(len(str2)):
+            str1 = str1.replace(str2[i],"")
+        return str1
