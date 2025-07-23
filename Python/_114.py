@@ -1,0 +1,17 @@
+"""
+You'll be given two strings a and b, a separator symbol, and you need to print a and b such that a and b are separated by the separator symbol followed by a new line.
+
+Examples:
+
+Input: a = "Hello", b = "World", separator = "@"
+Output: Hello@World
+Explanation: a and b are printed with the separator symbol in between.
+
+
+"""
+
+a = input()
+b = input()
+seperator = input()
+# Print in the required format and a new line
+print(a+seperator+b)
